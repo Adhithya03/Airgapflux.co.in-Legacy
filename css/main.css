@@ -1,0 +1,110 @@
+:root {
+    --primary-background-color: #303446;
+    --primary-text-color: #ea999c;
+    --secondary-text-color: #a6d189;
+    --tertiary-text-color: #FF847C;
+    --navbar-background-color: #292c3c;
+    --navbar-link-color: #b5bfe2;
+    --link-color: #838ba7;
+    --link-hover-color: #838ba7;
+  }
+  
+  html {
+    scroll-behavior: smooth;
+    transition: scroll-behavior 2s;
+  }
+  
+  body {
+    background-color: var(--primary-background-color);
+  }
+  
+  h1 {
+    margin: 20px;
+    color: var(--primary-text-color);
+    font-family: 'Philosopher', sans-serif;
+    letter-spacing: 10px;
+  }
+  
+  h2 {
+    font-family: 'Josefin Sans', sans-serif;
+    color: var(--primary-text-color);
+    margin: 0px;
+    margin-top: 10px;
+    /* letter-spacing: 1.8px; */
+  }
+  
+  h3 {
+    font-family: 'Bree Serif', serif;
+    margin: 0px;
+    color: var(--secondary-text-color);
+    /* font-size: 10px; */
+    margin-top: 3px;
+    margin-left: 3rem;
+    letter-spacing: 0.2px;
+  }
+  
+  h4 {
+    font-family: 'Dosis', sans-serif;
+    font-style: italic;
+    /* font-size: 20px; */
+    margin: 0px;
+    color: var(--tertiary-text-color);
+    margin-top: 3px;
+    margin-left: 3rem;
+    letter-spacing: 0.2px;
+  }
+  
+  .go-to-top {
+    display: none;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    color: var(--primary-text-color);
+    cursor: pointer;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+  }
+  
+  .go-to-top svg {
+    fill: currentColor;
+    width: 24px;
+    height: 24px;
+  }
+  
+  .go-to-top.show {
+    display: block;
+    opacity: 1;
+  }
+  
+  .navbar {
+    background-color: var(--navbar-background-color);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  }
+  
+  .navbar a {
+    margin-left: 0.8rem;
+    font-family: 'Aboreto', cursive;
+    /* color: var(--navbar-link-color); */
+    /* font-weight: 400; */
+    text-decoration: none;
+  }
+  
+  .menu {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: var(--primary-text-color);
+    font-size: x-large;
+    margin-left: 0.8rem;
+    margin-top: 0.8rem;
+  }
+  
+  a {
+    color: var(--link-color);
+    text-decoration: underline 1px;
+  }
+  
+  a:hover {
+    color: var(--link-hover-color);
+  }

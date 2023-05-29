@@ -1,0 +1,76 @@
+#video-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+}
+#video-form label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+#video-form input[type=text] {
+  width: 300px;
+  margin-bottom: 10px;
+  padding: 5px;
+  font-size: 16px;
+}
+#video-form textarea {
+  width: 300px;
+  height: 100px;
+  margin-bottom: 10px;
+  padding: 5px;
+  font-size: 16px;
+}
+#add-video-button {
+  margin-bottom: 20px;
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+#submit-button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+#video-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 50%;
+}
+#video-list li {
+  background-color: #f6f6f6;
+  padding: 10px;
+  margin-bottom: 5px;
+  border-radius: 5px;
+}
+#video-list li:last-child {
+  margin-bottom: 0;
+}
+#video-list .title {
+  font-weight: bold;
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+#video-list .description {
+  font-size: 14px;
+}
+#video-list .delete-button {
+  margin-left: 10px;
+  padding: 5px 10px;
+  font-size: 14px;
+  background-color: #f44336;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}

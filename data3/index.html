@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resource Submission Form</title>
+    <!-- Add Bootstrap CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h1 class="text-center my-4">Resource Submission Form</h1>
+        <form action="insert.php" method="post">
+            <div class="form-group">
+                <label for="resourceTitle">Resource Title:</label>
+                <input type="text" class="form-control" id="resourceTitle" name="resourceTitle" required>
+            </div>
+            <div class="form-group">
+                <label for="resourceLink">Resource Link:</label>
+                <input type="text" class="form-control" id="resourceLink" name="resourceLink" required>
+            </div>
+            <div class="form-group">
+                <label for="resourceDescription">Resource Description:</label>
+                <textarea class="form-control" id="resourceDescription" name="resourceDescription"></textarea>
+            </div>
+
+            <div class="form-group">
+                <label for="ratingID">Rating ID (Assoc. with Resource Rating):</label>
+                <input type="number" class="form-control" id="ratingID" name="ratingID" required>
+            </div>
+            <div class="form-group">
+                <label for="notes">Notes:</label>
+                <textarea class="form-control" id="notes" name="notes"></textarea>
+            </div>
+
+            <div class="form-group">
+                <label for="conceptualRating">Conceptual Rating (1-5):</label>
+                <input type="number" class="form-control" id="conceptualRating" name="conceptualRating" min="1" max="5" required>
+            </div>
+            <div class="form-group">
+                <label for="levelOfDifficulty">Level of Difficulty (1-5):</label>
+                <input type="number" class="form-control" id="levelOfDifficulty" name="levelOfDifficulty" min="1" max="5" required>
+            </div>
+            <div class="form-group">
+                <label for="summary">Summary:</label>
+                <textarea class="form-control" id="summary" name="summary"></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+    </div>
+    
+    <!-- Add jQuery and Bootstrap JS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
